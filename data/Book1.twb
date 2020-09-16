@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.0801.1333                               -->
+<workbook original-version='18.1' source-build='2020.3.0 (20203.20.0801.1333)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='netflixUpdated' inline='true' name='federated.1bj4u2y1oeux1j1cuimee18y7396' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflixUpdated' name='textscan.0v50j8i0cdemyi1h0gtns0k4z6yv'>
+            <connection class='textscan' directory='C:/Users/Jimen/Desktop/Internships/movie_tv_project/data' filename='netflixUpdated.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0v50j8i0cdemyi1h0gtns0k4z6yv' name='netflixUpdated.csv' table='[netflixUpdated#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='rating' ordinal='2' />
+            <column datatype='integer' name='release_year' ordinal='3' />
+            <column datatype='string' name='type' ordinal='4' />
+            <column datatype='string' name='listed_in' ordinal='5' />
+            <column datatype='date' name='Date' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0v50j8i0cdemyi1h0gtns0k4z6yv' name='netflixUpdated.csv' table='[netflixUpdated#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='title' ordinal='1' />
+            <column datatype='string' name='rating' ordinal='2' />
+            <column datatype='integer' name='release_year' ordinal='3' />
+            <column datatype='string' name='type' ordinal='4' />
+            <column datatype='string' name='listed_in' ordinal='5' />
+            <column datatype='date' name='Date' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[netflixUpdated.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='netflixUpdated.csv' datatype='table' name='[__tableau_internal_object_id__].[netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B]' role='measure' type='quantitative' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='netflixUpdated.csv' id='netflixUpdated.csv_B50C478D89524619927F5F31EBAA5D9B'>
+            <properties context=''>
+              <relation connection='textscan.0v50j8i0cdemyi1h0gtns0k4z6yv' name='netflixUpdated.csv' table='[netflixUpdated#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='title' ordinal='1' />
+                  <column datatype='string' name='rating' ordinal='2' />
+                  <column datatype='integer' name='release_year' ordinal='3' />
+                  <column datatype='string' name='type' ordinal='4' />
+                  <column datatype='string' name='listed_in' ordinal='5' />
+                  <column datatype='date' name='Date' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflixUpdated' name='federated.1bj4u2y1oeux1j1cuimee18y7396' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bj4u2y1oeux1j1cuimee18y7396'>
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+            <column-instance column='[listed_in]' derivation='None' name='[none:listed_in:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1bj4u2y1oeux1j1cuimee18y7396].[sum:F1:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <size column='[federated.1bj4u2y1oeux1j1cuimee18y7396].[sum:F1:qk]' />
+              <text column='[federated.1bj4u2y1oeux1j1cuimee18y7396].[none:listed_in:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{71EE6467-5D78-4470-83BF-8010F3D53BFE}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1bj4u2y1oeux1j1cuimee18y7396].[none:listed_in:nk]</field>
+            <field>[federated.1bj4u2y1oeux1j1cuimee18y7396].[none:release_year:qk]</field>
+            <field>[federated.1bj4u2y1oeux1j1cuimee18y7396].[sum:F1:qk]</field>
+            <field>[federated.1bj4u2y1oeux1j1cuimee18y7396].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{080679F7-A0BB-47C2-9D8B-DBA9A7600620}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
